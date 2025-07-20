@@ -7,6 +7,13 @@ class Book:
         self.author = author
         self.year = year
 
+    @staticmethod
+    def validate_book_data(book):
+        #return all(k in data for k in ["title", "author", "year"])
+        if book.get('title') and book.get('author') and book.get('year'):
+            return True
+        return False
+
     @property
     def title(self):
         return self.__title

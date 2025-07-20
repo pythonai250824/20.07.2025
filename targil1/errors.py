@@ -9,3 +9,9 @@ class BookNotFoundError(Exception):
 
 class BookNotBorrowedError(Exception):
     pass
+
+class UserNotRegisteredError(Exception):
+    pass
+
+class BookNotExistInLibraryError(Exception):
+    pass
